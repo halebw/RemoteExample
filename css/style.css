@@ -9,16 +9,14 @@
   line-height: 0;
 }
 * {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0;
 }
 body {
   background-color: #515151;
 }
 #container {
   max-width: 800px;
-  background-color: red;
+  background-color: lime;
   margin: auto;
 }
 footer {
@@ -60,8 +58,8 @@ nav a p:hover {
 nav a p:visited {
   color: #999999;
 }
-@media only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
-  nav p {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  nav a p {
     display: block;
     width: 60%;
     background-color: #8fd248;
@@ -73,4 +71,13 @@ nav a p:visited {
     border-radius: 50px 0;
     margin: 10px auto;
   }
+}
+#content {
+  background-color: green;
+  padding: 30px;
+}
+form {
+  position: absolute;
+  right: 20px;
+  width: 100px;
 }
