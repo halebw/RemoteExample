@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 $("nav p").click(function(e){
 var linkName = $(this).html().toLowerCase();
-var url = "scripts/php/func.php";
+var url = "http://mypage.iu.edu/~bwhale/RemoteExample/scripts/php/func.php";
 
 var posting = $.post(url, {func: "nav", navName: linkName});
 
